@@ -1,0 +1,59 @@
+.article-list {
+  width: 100%;
+}
+
+.article-list h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.article-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.article-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.article-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.article-date {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 1rem;
+}
+
+.article-excerpt {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.no-articles {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  padding: 2rem;
+}
